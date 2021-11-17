@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <title>날씨어때</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" 
+              content="initial-scale=1, width=device-width" />
+        <meta name="author" content="지호소프트" />
+        <meta name="description" content="날씨어때" />
+        <link href="css/common.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="back">
+            <img src="images/sun.jpg" alt="sun" />
+        </div>
+        <header>
+            <h1>날씨어때</h1>
+            <select id="city">
+                <option lat="" lon="">현재위치</option>
+                <option lat="37.52682" lon="126.92435">서울</option>
+                <option lat="36.36125" lon="127.38506">대전</option>
+                <option lat="35.54964" lon="128.56038">대구</option>
+                <option lat="35.16155" lon="129.04364">부산</option>
+                <option lat="36.50593" lon="127.26022">세종</option>
+                <option lat="33.49947" lon="126.53113">제주</option>
+            </select>
+        </header>
+        <div id="left">
+            <div>
+                <div id="date">2021-11-10 (수요일)</div>
+                <div id="icon"></div>
+                <div id="forecast">비온 후 갬</div>
+                <div id="temp">4.2</div>
+                <div id="minmax">
+                    <span id="min">1.2</span>
+                    <span id="max">6.3</span>
+                </div>
+                <div id="wind">
+                    <img id="dir" src="images/White_Arrow_Up.svg" alt="wind direction" />
+                    <span id="speed">9</span>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div>
+                <div class="fore">
+                    <div class="ficon">?</div>
+                    <div class="fbox">
+                        <div class="ftemp">4.2</div>
+                        <div class="ftext">비온 후 갬</div>
+                    </div>
+                    <div class="fday">목</div>
+                </div>
+                <div class="fore">
+                    <div class="ficon"></div>
+                    <div class="fbox">
+                        <div class="ftemp"></div>
+                        <div class="ftext"></div>
+                    </div>
+                    <div class="fday"></div>
+                </div>
+                <div class="fore">
+                    <div class="ficon"></div>
+                    <div class="fbox">
+                        <div class="ftemp"></div>
+                        <div class="ftext"></div>
+                    </div>
+                    <div class="fday"></div>
+                </div>
+                <div class="fore">
+                    <div class="ficon"></div>
+                    <div class="fbox">
+                        <div class="ftemp"></div>
+                        <div class="ftext"></div>
+                    </div>
+                    <div class="fday"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
+
